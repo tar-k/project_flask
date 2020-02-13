@@ -2,6 +2,83 @@
     background-color: rgb(75, 70, 70);
 }
 a {
-    color:whitesmoke
+    color:whitesmoke;
+    cursor: pointer;
         
+}
+.card {
+    border: 2px solid #333333;
+    margin: 5px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 10px 15%;
+}
+
+.bottom-ui {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.tags span {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.tags span.ui-tag {
+    background-color: orange;
+}
+.tags span.tech-tag {
+    background-color: rgb(105, 95, 76);
+    color: white;
+}
+.tags span.cnn-tag {
+    background-color: rgb(62, 164, 231);
+}
+a.btn {
+    font-size: 0.8rem;
+}
+.card:hover {
+    box-shadow: 4px 4px #666666;
+    transform: scale(1.01);
+}
+div#full-card {
+    display: None;
+    position: fixed;
+    top: 20vh;
+    left: 20%;
+    height: 80vh;
+    width: 60%;
+    border: 1px solid;
+    margin: 20px auto;
+    background-color: white;
+    overflow-y: scroll;
+}
+div#full-card p {
+    padding: 30px;
+}
+a#close-btn {
+    position: fixed;
+    top: 23vh;
+    left: 20%;
+}
+a#close-btn svg {
+    fill: white;
+    background: rgb(75, 70, 70);
+
 }
