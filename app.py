@@ -8,5 +8,7 @@ def index():
     posts = get_posts()
     return render_template('index.html', role=role, posts=posts)
 
+
+
 if __name__ == '__main__':
     app.run(debug=True)

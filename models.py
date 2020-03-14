@@ -59,7 +59,7 @@ def add_post(username, title, content, url, rating, tags):
     session = Session(bind=engine)
     user = session.query(User).filter_by(name=username).first()
     user_posts = user.user_posts
-    new_post = Post(title=title, content=content, url=url, rating=rating, tags=tags)
+    new_post = Post(title=title, content=content, url=url, rating=rating)
     try:
         user_posts.append(new_post)
         session.commit()
